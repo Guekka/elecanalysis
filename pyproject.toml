@@ -1,13 +1,7 @@
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[project]
+[tool.poetry]
 name = "elecanalysis"
 version = "0.0.1"
-authors = [
-  { name="zdimension", email="zippedfire@free.fr" },
-]
+authors = ["zdimension"]
 description = "An utility for analysing electrical costs"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -17,6 +11,24 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[tool.poetry.dependencies]
+python = "^3.8"
+
+matplotlib = "3.8.2"
+python-dotenv = "1.0.0"
+requests = "2.31.0"
+urllib3 = "2.1.0"
+dataclasses-json = ">=0.6.3"
+numpy = "~1.26.2"
+nicegui = "~1.4.8"
+plotly = "~5.18.0"
+pandas = "~2.1.4"
+
 [project.urls]
 Homepage = "https://github.com/pypa/sampleproject"
 Issues = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
